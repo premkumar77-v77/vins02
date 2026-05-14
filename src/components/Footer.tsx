@@ -10,8 +10,11 @@ const Footer = () => (
         </div>
         <div className="flex flex-col items-center sm:items-start">
           <p className="text-primary-foreground font-bold text-lg mb-4 underline decoration-accent underline-offset-8">Branch Address 1</p>
-          <p className="text-primary-foreground/70 text-base font-semibold">AKP ENTERPRISES</p>
-          <p className="text-primary-foreground/70 text-base leading-relaxed">4/39, Poonjollai street,<br />Poonganagar, Thiruvallur</p>
+          <p className="text-primary-foreground/70 text-base leading-relaxed text-center sm:text-left">
+            7B, Jeevanandam Street,<br />
+            Ramana Nagar, Perambur,<br />
+            Chennai - 600 011.
+          </p>
         </div>
         <div className="flex flex-col items-center sm:items-start">
           <p className="text-primary-foreground font-bold text-lg mb-4 underline decoration-accent underline-offset-8">Quick Links</p>
@@ -20,6 +23,7 @@ const Footer = () => (
             <a href="/about" className="hover:text-accent transition-colors">About</a>
             <a href="/products" className="hover:text-accent transition-colors">Products</a>
             <a href="/gallery" className="hover:text-accent transition-colors">Gallery</a>
+            <a href="/contact" className="hover:text-accent transition-colors">Contact</a>
           </nav>
         </div>
       </div>

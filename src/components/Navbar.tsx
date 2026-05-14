@@ -8,6 +8,7 @@ const navLinks = [
   { label: "Products", href: "/products" },
   { label: "Why Us", href: "/why-us" },
   { label: "Gallery", href: "/gallery" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
         {/* Navigation Links on the Right (Desktop) */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((l) => (
-            l.download ? (
+            'download' in l && l.download ? (
               <a key={l.href} href={l.href} download className="text-primary-foreground/90 hover:text-accent text-base font-semibold transition-colors">
                 {l.label}
               </a>
@@ -46,7 +47,7 @@ const Navbar = () => {
       {open && (
         <div className="lg:hidden bg-primary border-t border-primary-foreground/10 pb-6 shadow-xl">
           {navLinks.map((l) => (
-            l.download ? (
+            'download' in l && l.download ? (
               <a key={l.href} href={l.href} download onClick={() => setOpen(false)} className="block px-8 py-4 text-primary-foreground/90 hover:text-accent text-lg font-semibold transition-colors border-b border-primary-foreground/5">
                 {l.label}
               </a>
